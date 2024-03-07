@@ -22,6 +22,7 @@ body {
     line-height: 100px;
     margin-right: 10px;
     vertical-align: middle;
+    animation: rollDice 1s ease-in-out;
   }
 
 button {
@@ -40,4 +41,14 @@ button:hover {
     transition: 0.5s ease-in-out;
     border-color: white;
   }
+
+@keyframes rollDice {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
   
